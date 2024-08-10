@@ -4,26 +4,61 @@
 
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
   font-weight: 500;
 }
 
+.strong_points_label {
+  margin-bottom: 8px;
+}
+
+
 .words {
-  height: 40px;
+  height: 80px;
   overflow: hidden;
+
 }
 
 span {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 100%;
   padding: 8px;
   margin-left: 8px;
-  animation: spin_words 8s infinite;
-  background-color: white;
-  border: 1px solid peru
+  animation: spin_words 12s infinite;
+
+  font-size: 3rem;
+  font-weight: bold;
+
+}
+
+.apps {
+  background: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.api {
+  /* background: linear-gradient(19deg, #b721ff 0%, #d8cb11 100%); */
+  background: linear-gradient(19deg, #70b90a 0%, #38e8b9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.saas {
+  background: linear-gradient(19deg, #e80b0b 0%, #924be8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cloud {
+  background: linear-gradient(19deg, #3721ff 0%, #1ae8d0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @keyframes spin_words {
@@ -36,27 +71,27 @@ span {
   }
 
   25% {
-    transform: translateY(-40px);
+    transform: translateY(-80px);
   }
 
   40% {
-    transform: translateY(-40px);
+    transform: translateY(-80px);
   }
 
   50% {
-    transform: translateY(-80px);
+    transform: translateY(-160px);
   }
 
   65% {
-    transform: translateY(-80px);
+    transform: translateY(-160px);
   }
 
   75% {
-    transform: translateY(-120px);
+    transform: translateY(-240px);
   }
 
   90% {
-    transform: translateY(-120px);
+    transform: translateY(-240px);
   }
 
   100% {

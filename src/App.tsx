@@ -6,12 +6,12 @@ function App() {
   return (
     <>
       <div className="box">
-        <p>Tenho um forte interesse e experiência em:</p>
+        <p className='strong_points_label'>Tenho um forte interesse e experiência em:</p>
         <div className="words">
-          <span>Apps mobile</span>
-          <span>Desenvolver APIs e integrações</span>
-          <span>Software as services</span>
-          <span>Cloud computing</span>
+          <span className='apps'>Apps mobile</span>
+          <span className='api'> Criação de APIs</span>
+          <span className='saas'>Testes automatizados</span>
+          <span className='cloud'>Cloud computing</span>
           {/* <span>Cloud computing</span> */}
         </div>
       </div>
