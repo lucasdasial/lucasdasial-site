@@ -1,0 +1,74 @@
+.box {
+  width: 600px;
+  /* padding: 16px; */
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 500;
+}
+
+.words {
+  height: 40px;
+  overflow: hidden;
+}
+
+span {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 8px;
+  margin-left: 8px;
+  animation: spin_words 8s infinite;
+  background-color: white;
+  border: 1px solid peru
+}
+
+@keyframes spin_words {
+  0% {
+    transform: translateY(0);
+  }
+
+  15% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-40px);
+  }
+
+  40% {
+    transform: translateY(-40px);
+  }
+
+  50% {
+    transform: translateY(-80px);
+  }
+
+  65% {
+    transform: translateY(-80px);
+  }
+
+  75% {
+    transform: translateY(-120px);
+  }
+
+  90% {
+    transform: translateY(-120px);
+  }
+
+  100% {
+    transform: translateY(-0px);
+  }
+
+
+
+
+
+
+
+
+
+}
