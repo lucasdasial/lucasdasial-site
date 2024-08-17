@@ -1,40 +1,52 @@
 
 
+import { CodaLogo, SuitcaseSimple, Wrench } from "@phosphor-icons/react";
 import './App.css';
+import { TopBar, } from './components/TopBar';
 
 function App() {
 
   return (
 
     <div className='page'>
+
+      <TopBar />
       <main className='main'>
-        <section className="content main_content">
-          <aside className='aside' data-aos="fade-left" >
-            <h1>I make <br /> mobile <br /> & web <br />apps.</h1>
-          </aside>
+        <h1>I make  mobile <br />  & web apps.</h1>
+        <p className='myDescription' data-aos="fade-up" data-aos-delay="800" >
+          Olá, também sou conhecido como <strong>Dasial</strong>. Sou desenvolvedor Fullstack com ampla experiência no desenvolvimento e criação de aplicativos móveis,
+          além de atuar na elaboração de APIs para integração entre sistemas e aplicações web.
+        </p>
 
-          <section className='intro'>
-            <div className='intro_header' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="400">
-              <img className='avatar' src="https://avatars.githubusercontent.com/u/72477227?v=4" alt="foto de perfil" />
-              <p className='title highlight'>Fullstack <br /> <span >developer</span>.</p>
+
+        <section className='cards'>
+
+
+          <div className='card'>
+            <div className="card-content">
+              <Wrench weight="duotone" color="white" size={42} />
             </div>
-            <p className='intro description' data-aos="fade-up" data-aos-delay="800" >Olá, meu nome é Lucas Dasial. Sou um desenvolvedor Fullstack com ampla experiência no desenvolvimento e criação de aplicativos móveis, além de atuar na elaboração de APIs para integração entre sistemas e aplicações web.</p>
-            <nav data-aos="fade-up" data-aos-delay="1000">
+            <div className="label-box card-one">
+              <p>Serviços</p>
+            </div>
+          </div>
 
-              {/* <button>
-                trabalho
-              </button>
-              <button>
-                social
-              </button> */}
-              <button>
-                ver mais
-              </button>
-
-            </nav>
-
-
-          </section>
+          <div className='card'>
+            <div className="card-content">
+              <SuitcaseSimple weight="duotone" color="white" size={42} />
+            </div>
+            <div className="label-box card-two">
+              <p>Trabalho</p>
+            </div>
+          </div>
+          <div className='card'>
+            <div className="card-content">
+              <CodaLogo weight="duotone" color="white" size={42} />
+            </div>
+            <div className="label-box card-three">
+              <p>Projetos</p>
+            </div>
+          </div>
         </section>
       </main>
 
@@ -73,7 +85,7 @@ function App() {
 
 
 
-    </div>
+    </div >
 
   )
 }

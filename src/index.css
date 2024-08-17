@@ -19,7 +19,7 @@
 }
 
 .page {
-  background-color: white;
+  max-width: 1440px;
   min-height: 100vh;
   margin: 0 auto;
 
@@ -34,20 +34,9 @@ body {
 
 }
 
-h1 {
-
-  font-size: 7rem;
-  line-height: 7rem;
-}
-
-h2 {
-  font-size: 3.2rem;
-  font-weight: 500;
-}
-
 p {
-  font-size: 1.6rem;
-  color: rgb(108, 108, 108)
+  font-size: 1.8rem;
+  /* color: rgb(108, 108, 108) */
 }
 
 /* a {
