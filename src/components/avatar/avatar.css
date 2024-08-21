@@ -1,0 +1,16 @@
+.avatar-box {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+
+    font-size: 2rem;
+    color: #1da1f2;
+
+}
+
+.avatar-image {
+    box-shadow: rgb(0, 0, 0) 4px 4px 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+}
