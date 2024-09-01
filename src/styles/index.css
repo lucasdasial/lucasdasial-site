@@ -4,37 +4,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
   scroll-behavior: smooth;
 
 
 }
 
 :root {
-  /* font-size: 62.5%; */
   font-family: 'Poppins';
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-}
-
-main {
-  scroll-snap-type: y mandatory;
-}
-
-section {
-  scroll-snap-align: initial;
-
 }
 
 a {
   text-decoration: none;
 }
-
-
-
 
 @media(max-width:768px) {
   :root {
@@ -46,4 +30,9 @@ a {
   :root {
     font-size: 72%;
   }
+}
+
+li{
+  text-decoration: none;
+  list-style: none;
 }

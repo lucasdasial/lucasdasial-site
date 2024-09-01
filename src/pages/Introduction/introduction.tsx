@@ -11,7 +11,6 @@ export function Introduction() {
     return <section className='hero-container'>
 
         <div className="hero-content-box">
-
             <div className="intro-container">
                 <Avatar />
                 <h1 className='intro-title' data-aos="fade-left" data-aos-delay="">
@@ -31,16 +30,11 @@ export function Introduction() {
                 </a>
             </div>
 
-
             <div className='image-container' data-aos="fade-right" data-aos-delay="">
                 <SimpleParallax orientation='down' scale={1.35} delay={2} overflow>
                     <img className='hero-img' src="/images/1.svg" alt="ilustração" />
                 </SimpleParallax>
             </div>
-
-
-
-
         </div>
     </section>
 
