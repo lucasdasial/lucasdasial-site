@@ -1,0 +1,39 @@
+.welcome{
+    height: 400px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.welcome a {
+    margin-top: 16px;
+}
+
+.illustration{
+    height: 400px;
+    max-width: 400px;
+    width: 100%;
+}
+.illustration img{
+    width: 100%;
+}
+
+
+
+.intro h1{
+    font-size: 1.8rem;
+    line-height:2.4rem;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+.intro p{
+    color: rgb(161, 161, 161)
+}
+
+.gradient{
+    display: inline;
+    background: linear-gradient( 20deg,rgb(47, 0, 255) 0, rgb(0, 204, 255)100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}

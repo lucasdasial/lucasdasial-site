@@ -1,14 +1,11 @@
+import styles from "./topBar.module.css";
+const TopBar = () => {
+  return (
+    <header className={styles.container}>
+      <img className={styles.avatar} src="images/me2.png" alt="Lucas Dasial" />
+      <h1>.dasial</h1>
+    </header>
+  );
+};
 
-import "./topBar.css"
-
-export  function TopBar(){
-return (<header className="header">
-    <h1>.dasial</h1>
-    <nav>
-      <ul>
-        <li>about</li>
-        <li>work</li>
-      </ul>
-    </nav>
-  </header>)
-}
+export default TopBar;

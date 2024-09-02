@@ -3,7 +3,7 @@ import 'aos/dist/aos.css';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App.tsx';
-import './styles/index.css';
+import './theme/root.css';
 
 AOS.init({
   duration: 800
