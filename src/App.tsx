@@ -1,16 +1,11 @@
 import "./App.css";
-import Drawer from "./components/drawer/drawer";
-import TopBar from "./components/topBar/TopBar";
+import NavigationBar from "./components/navigationBar/navigationBar";
 
 function App() {
   return (
-    <>
-      <TopBar />
-      <Drawer />
-      {/* <main>
-        <Welcome />
-      </main> */}
-    </>
+    <div className="app-view">
+      <NavigationBar />
+    </div>
   );
 }
 

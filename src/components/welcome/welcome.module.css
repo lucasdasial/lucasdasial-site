@@ -1,39 +1,73 @@
-.welcome{
-    height: 400px;  
-    display: flex;
+.container {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 90vh;
+  margin-top: 80px;
+
+  /* border: 1px solid #c3e6ff; */
+  /* border: 1px solid #e2eaf0; */
+  border-radius: 8px;
+}
+
+.intro {
+  height: 300px;
+  max-width: 700px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.illustration {
+  height: 300px;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+}
+
+.intro h1 {
+  width: 100%;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.intro .points {
+  width: 100%;
+  font-size: 1.3rem;
+}
+.intro .points p {
+  margin-top: 8px;
+  color: rgb(161, 161, 161);
+}
+
+.gradient {
+  display: inline;
+  background: linear-gradient(20deg, rgb(47, 0, 255) 0, rgb(0, 204, 255) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.illustration .img_bg {
+  width: 90%;
+  height: 90%;
+  background-color: aliceblue;
+  /* border: 1px solid #8cc8f2; */
+  border-radius: 8px;
+}
+
+.illustration img {
+  width: 110%;
+}
+
+@media (max-width: 900) {
+  .container {
     flex-direction: column;
-    justify-content: center;
-}
-.welcome a {
-    margin-top: 16px;
-}
-
-.illustration{
-    height: 400px;
-    max-width: 400px;
-    width: 100%;
-}
-.illustration img{
-    width: 100%;
-}
-
-
-
-.intro h1{
-    font-size: 1.8rem;
-    line-height:2.4rem;
-    margin-bottom: 16px;
-    font-weight: bold;
-}
-
-.intro p{
-    color: rgb(161, 161, 161)
-}
-
-.gradient{
-    display: inline;
-    background: linear-gradient( 20deg,rgb(47, 0, 255) 0, rgb(0, 204, 255)100%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+  }
 }
