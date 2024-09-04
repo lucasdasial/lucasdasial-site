@@ -1,0 +1,11 @@
+.carrousel {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-evenly;
+
+  text-align: center;
+}
+.carrousel img {
+  width: 3rem;
+}

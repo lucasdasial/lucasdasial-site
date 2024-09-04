@@ -9,45 +9,18 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  min-height: 100vh;
-  background: #f6f6f6;
+a {
+  text-decoration: none;
 }
 
 :root {
   font-family: "Poppins";
 }
 
-a {
-  text-decoration: none;
-}
-
-@media (max-width: 768px) {
-  :root {
-    font-size: 80%;
-  }
-}
-
-@media (max-width: 425px) {
-  :root {
-    font-size: 72%;
-  }
-}
-
-button {
-  background: none;
-  border: none;
-}
-
-li {
-  text-decoration: none;
-  list-style: none;
-}
-
 /* Estiliza o contêiner da scrollbar */
 ::-webkit-scrollbar {
-  width: 12px; /* Largura da scrollbar */
-  height: 12px; /* Altura da scrollbar, para rolagem horizontal */
+  width: 4px; /* Largura da scrollbar */
+  height: 4px; /* Altura da scrollbar, para rolagem horizontal */
 }
 
 /* Estiliza o "polegar" da scrollbar, a parte que se move */
@@ -65,4 +38,10 @@ li {
 ::-webkit-scrollbar-track {
   background-color: #f0f8ff; /* Cor de fundo da scrollbar */
   border-radius: 6px; /* Bordas arredondadas */
+}
+
+@media (max-width: 425px) {
+  :root {
+    font-size: 80%;
+  }
 }

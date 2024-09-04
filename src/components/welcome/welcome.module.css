@@ -1,49 +1,75 @@
 .container {
-  display: flex;
-  gap: 32px;
-  align-items: center;
-  justify-content: space-between;
-
-  height: 90vh;
-  margin-top: 80px;
-
-  /* border: 1px solid #c3e6ff; */
-  /* border: 1px solid #e2eaf0; */
-  border-radius: 8px;
-}
-
-.intro {
-  height: 300px;
-  max-width: 700px;
+  max-width: 1200px;
   width: 100%;
+  margin: auto;
+  padding: 1.5rem;
+  margin-top: 81px;
+  height: calc(100vh - 100px);
+  transition: 200ms ease-in-out;
 
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
 }
 
-.illustration {
-  height: 300px;
-  width: 35%;
+.text_box {
+  /* background-color: aliceblue; */
+  width: 60%;
+}
+
+.text_box .me {
   display: flex;
+  gap: 16px;
+  align-items: end;
+  margin-bottom: 3rem;
+}
+
+.me img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.text_box h1 {
+  line-height: 2.3rem;
+  margin: 1.5rem 0;
+}
+
+.text_box .description p {
+  color: gray;
+  margin-bottom: 4px;
+}
+
+.cta {
+  background-color: black;
+  color: white;
+  padding: 8px 12px;
+  margin-top: 2.3rem;
+
+  width: 90%;
+  font-size: 1.1rem;
+
+  cursor: pointer;
+}
+
+.cta:hover {
+  background: aliceblue;
+  color: black;
+}
+
+.illustration_box {
+  width: 40%;
+  height: fit-content;
+  background-color: aliceblue;
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
-.intro h1 {
-  width: 100%;
-  font-size: 2.4rem;
-  line-height: 2.4rem;
-  margin-bottom: 16px;
-  font-weight: bold;
-}
-
-.intro .points {
-  width: 100%;
-  font-size: 1.3rem;
-}
-.intro .points p {
-  margin-top: 8px;
-  color: rgb(161, 161, 161);
+.illustration_box > img {
+  width: 140%;
 }
 
 .gradient {
@@ -54,20 +80,15 @@
   -webkit-background-clip: text;
 }
 
-.illustration .img_bg {
-  width: 90%;
-  height: 90%;
-  background-color: aliceblue;
-  /* border: 1px solid #8cc8f2; */
-  border-radius: 8px;
-}
-
-.illustration img {
-  width: 110%;
-}
-
-@media (max-width: 900) {
+@media (max-width: 768px) {
   .container {
+    justify-content: space-evenly;
     flex-direction: column;
+  }
+
+  .text_box {
+    max-width: 600px;
+    width: 100%;
+    height: fit-content;
   }
 }
