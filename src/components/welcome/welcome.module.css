@@ -1,10 +1,10 @@
 .container {
+  height: calc(100vh - 81px);
   max-width: 1200px;
   width: 100%;
   margin: auto;
   padding: 1.5rem;
   margin-top: 81px;
-  height: calc(100vh - 100px);
   transition: 200ms ease-in-out;
 
   display: flex;
@@ -14,7 +14,6 @@
 }
 
 .text_box {
-  /* background-color: aliceblue; */
   width: 60%;
 }
 
