@@ -2,24 +2,21 @@ function App() {
   return (
     <main className="app">
       <aside className="aside aside-left">
-        <div className="content">
-          <img
-            className="profile_img"
-            src="fav.png"
-            alt="Foto de perfil Lucas Dasial"
-          />
+        <div className="content" data-aos="fade-up" data-aos-delay="300">
+          <div className="profile_img">
+            <img src="fav.png" alt="Foto de perfil Lucas Dasial" />
+          </div>
           <h1 className="about-title">
             Olá, sou Lucas <br /> Dasial.
           </h1>
-          <article className="about">
+          <article className="about" data-aos="fade-up" data-aos-delay="400">
             <p>
               Eu sou Lucas Alves, também conhecido como Dasial, sou um
               programador com 4 anos de experiência, graduado em Análise e
-              Desenvolvimento de Sistemas e especializado em Engenharia de
-              Software. Tenho paixão por desenvolver soluções completas e
-              eficientes, com foco em backend na construção de APIs para
-              integrações de sistemas, além do desenvolvimento de aplicativos
-              para Android e iOS.
+              Desenvolvimento de Sistemas e pós em Engenharia de Software. Tenho
+              paixão por desenvolver soluções completas e eficientes, com foco
+              em backend na construção de APIs para integrações de sistemas,
+              além do desenvolvimento de aplicativos para Android e iOS.
               <br />
             </p>
             <p>
@@ -32,6 +29,7 @@ function App() {
             </p>
           </article>
         </div>
+        {/* data-aos="fade-left" data-aos-delay="300" */}
         <div className="links">
           <p>
             <a href="https://www.linkedin.com/in/lucasdasial/" target="blank">
